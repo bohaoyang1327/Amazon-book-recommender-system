@@ -68,7 +68,7 @@ $$
 $$
 
 where:
-- \( \alpha \) is the weighting factor.
+- $\alpha$ is the weighting factor.
 - **SSCF Similarity** captures interaction-based user similarity.
 - **Demographic Similarity** accounts for similarities based on user attributes (e.g., age, location, language).
 
