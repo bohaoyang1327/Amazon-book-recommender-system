@@ -14,8 +14,11 @@ A Hybrid Book Recommendation System leveraging Collaborative Filtering (Item-CF,
 ## 📌 Features 
 
 ✔ Hybrid Recommendation: Combines Item-Based Collaborative Filtering (Item-CF) with popularity and location-based methods.
+
 ✔ Cold-Start Strategy: Uses 60% globally popular books and 40% regionally preferred books for new users.
+
 ✔ Scalability: Efficiently computes book recommendations using CSR sparse matrix storage and precomputed item-item similarity.
+
 ✔ Performance Optimization: Item-CF outperforms User-CF
 
 ---
@@ -24,18 +27,18 @@ A Hybrid Book Recommendation System leveraging Collaborative Filtering (Item-CF,
 
 The dataset consists of:
 
-User Ratings: Book reviews, ratings (1-10), and timestamps.
-Book Metadata: ISBN, title, author, year of publication, and publisher.
-User Demographics: Age, location (country).
+- User Ratings: Book reviews, ratings (1-10), and timestamps.
+- Book Metadata: ISBN, title, author, year of publication, and publisher.
+- User Demographics: Age, location (country).
 
 ---
 
 ## 🔧 How It Works
 
 ### 1. Data Preprocessing
-Missing Values: Imputes missing ages using the median.
-Data Cleaning: Standardizes country names and removes duplicates.
-Exploratory Data Analysis: Understands each datasets and looks for some actionable insights.
+- Missing Values: Imputes missing ages using the median.
+- Data Cleaning: Standardizes country names and removes duplicates.
+- Exploratory Data Analysis: Understands each datasets and looks for some actionable insights.
 
 ### 2️. Popular Books Ranking (Weighted Rating)
 Computes a weighted rating based on the number of ratings and average rating.
@@ -46,9 +49,8 @@ Hybrid Strategy:
 - 40% Location-Based (top books in the user’s country)
 
 ### 4. Collaborative Filtering for current users
-Item-Item Collaborative Filtering (Item-CF): Uses cosine similarity to recommend books based on past interactions.
-Performance Comparison:
-- Item-CF training time is 3.8x faster than User-CF
+- Item-Item Collaborative Filtering (Item-CF): Uses cosine similarity to recommend books based on past interactions.
+- Performance Comparison:Item-CF training time is 3.8x faster than User-CF
 
 --- 
 
